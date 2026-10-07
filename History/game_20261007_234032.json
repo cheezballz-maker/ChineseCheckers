@@ -1,0 +1,2149 @@
+{
+  "num_players": 2,
+  "agent_types": {
+    "PlayerId.PLAYER_1": "GameAgent",
+    "PlayerId.PLAYER_2": "HumanAgent"
+  },
+  "total_times": {
+    "PlayerId.PLAYER_1": 0.1064,
+    "PlayerId.PLAYER_2": 139.8908
+  },
+  "winner": "PlayerId.PLAYER_2",
+  "loser": null,
+  "initial_pieces": [
+    [
+      "(3, -5)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(4, -6)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(4, -7)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(1, -5)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(2, -6)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(3, -6)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(4, -5)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(3, -7)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(4, -8)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(2, -5)",
+      "PlayerId.PLAYER_1"
+    ],
+    [
+      "(-4, 7)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-3, 7)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-1, 5)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-4, 6)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-3, 6)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-2, 6)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-4, 5)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-3, 5)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-4, 8)",
+      "PlayerId.PLAYER_2"
+    ],
+    [
+      "(-2, 5)",
+      "PlayerId.PLAYER_2"
+    ]
+  ],
+  "move_history": [
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -6
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:35:46.909229",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0005
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -3,
+          5
+        ],
+        [
+          -3,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:35:49.375396",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.3109
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          4,
+          -8
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:35:51.042268",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0007
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -1,
+          5
+        ],
+        [
+          -1,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:35:58.889340",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 6.6344
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          3,
+          -6
+        ],
+        [
+          -1,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:00.470508",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0018
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -3,
+          7
+        ],
+        [
+          -3,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:04.689312",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.5751
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          4,
+          -6
+        ],
+        [
+          4,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:05.910178",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.001
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -4,
+          6
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:09.542977",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.0849
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          1,
+          -5
+        ],
+        [
+          -1,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:10.723659",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.005
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -2,
+          5
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:14.478653",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.5853
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -5
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:15.647458",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0011
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -4,
+          8
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:21.479874",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 3.0125
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          3,
+          -5
+        ],
+        [
+          1,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:22.662152",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0012
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:38.688326",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 14.8179
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          4,
+          -5
+        ],
+        [
+          4,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:39.847620",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0015
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -4,
+          7
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:42.960602",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.2094
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -1,
+          -4
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:44.119823",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0012
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -3,
+          4
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:49.277687",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 3.1716
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          0,
+          -4
+        ],
+        [
+          -2,
+          -2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:50.447589",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -3,
+          3
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:54.559417",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.0688
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -4
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:36:56.086749",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -2,
+          6
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:04.956381",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 7.3172
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          4,
+          -4
+        ],
+        [
+          4,
+          -2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:06.195292",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.007
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:13.119248",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 5.6617
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -1,
+          -3
+        ],
+        [
+          -3,
+          -1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:14.304438",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:18.738973",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.9264
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          1,
+          -3
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:20.618933",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0014
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -4,
+          5
+        ],
+        [
+          -4,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:25.248289",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 3.445
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          4,
+          -3
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:26.779245",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -3,
+          6
+        ],
+        [
+          -2,
+          5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:30.279360",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.2733
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -4,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:31.473191",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -2,
+          5
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:34.776010",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.6746
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          4,
+          -2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:36.024799",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:39.858767",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.5517
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          3,
+          -1
+        ],
+        [
+          -1,
+          5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:41.668633",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0064
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -4,
+          4
+        ],
+        [
+          -4,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:44.057218",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.2083
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          3,
+          -7
+        ],
+        [
+          2,
+          -6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:45.339086",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0048
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -4,
+          3
+        ],
+        [
+          2,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:50.088225",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.1189
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -6
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:51.612925",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0014
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:37:59.060453",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 5.531
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          4,
+          -7
+        ],
+        [
+          3,
+          -6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:00.239830",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0012
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:03.789321",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.3513
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:05.600102",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0034
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:15.341738",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 7.766
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:16.916025",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0022
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -1,
+          4
+        ],
+        [
+          -1,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:20.408436",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.2814
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          3,
+          -6
+        ],
+        [
+          3,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:21.637005",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0029
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -1,
+          3
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:25.462601",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.8957
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          3,
+          -5
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:26.687223",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -2,
+          2
+        ],
+        [
+          -2,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:38.041876",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 10.1732
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -4
+        ],
+        [
+          1,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:39.249384",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0012
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:41.605384",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.1603
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:42.761385",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0017
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -3,
+          1
+        ],
+        [
+          -1,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:46.748789",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.7818
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          1,
+          -3
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:47.970093",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0014
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:50.876187",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.659
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:52.088545",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0017
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          -4
+        ],
+        [
+          3,
+          -6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:54.169187",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.8385
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          0,
+          -2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:56.436239",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0016
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          3,
+          -4
+        ],
+        [
+          4,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:38:58.781200",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.125
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          -2
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:01.762121",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0016
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:03.628703",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.7137
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -3,
+          -1
+        ],
+        [
+          -3,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:05.868995",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0043
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:07.714865",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.6745
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -4,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:09.574886",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0043
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:11.276617",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.4523
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          1
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:13.503286",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0041
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:15.965863",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.2457
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          0
+        ],
+        [
+          -4,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:17.214500",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0014
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:19.028543",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.5738
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -2,
+          0
+        ],
+        [
+          -3,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:20.194532",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0033
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:23.882206",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.3837
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -2,
+          2
+        ],
+        [
+          -2,
+          6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:25.041534",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0013
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:26.535718",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.4553
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:27.607628",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0048
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          4,
+          -5
+        ],
+        [
+          4,
+          -6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:29.729911",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.0663
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          1
+        ],
+        [
+          -4,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:30.781963",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.001
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:33.808706",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.9926
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          2
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:34.869050",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0011
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          2,
+          -5
+        ],
+        [
+          4,
+          -7
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:44.169322",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 8.2049
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -3,
+          1
+        ],
+        [
+          -4,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:45.221969",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.001
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          -3
+        ],
+        [
+          2,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:46.799239",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.5243
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:47.853674",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0012
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:51.638153",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.7024
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -2,
+          2
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:52.724998",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0009
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          3,
+          -4
+        ],
+        [
+          3,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:55.338648",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.5387
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:56.390788",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0009
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          3,
+          -2
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:58.669216",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.1829
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          3
+        ],
+        [
+          -4,
+          5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:39:59.715797",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0009
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          -4
+        ],
+        [
+          2,
+          -6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:02.073050",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.3176
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          2
+        ],
+        [
+          -4,
+          3
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:03.136824",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0009
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          3,
+          -5
+        ],
+        [
+          3,
+          -7
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:06.478255",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.23
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -3,
+          3
+        ],
+        [
+          -3,
+          5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:07.638631",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.002
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          -5
+        ],
+        [
+          3,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:10.448850",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.7533
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -2,
+          3
+        ],
+        [
+          -3,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:11.495661",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0008
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          -4
+        ],
+        [
+          1,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:13.241879",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.6908
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:14.324745",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0035
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          2,
+          -6
+        ],
+        [
+          4,
+          -8
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:15.858560",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.481
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          4
+        ],
+        [
+          -4,
+          6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:16.901410",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0011
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:18.263483",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.3261
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          3
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:19.353358",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0007
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          -4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:22.242586",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 1.8393
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -3,
+          4
+        ],
+        [
+          -3,
+          6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:23.326940",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0026
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          3,
+          -4
+        ],
+        [
+          4,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:26.949364",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 2.5671
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          4
+        ],
+        [
+          -3,
+          4
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:28.027975",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0007
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          2,
+          -5
+        ],
+        [
+          2,
+          -6
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:29.366796",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.3069
+    },
+    {
+      "player": "PlayerId.PLAYER_1",
+      "move": [
+        [
+          -4,
+          5
+        ],
+        [
+          -4,
+          7
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:30.469108",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.0007
+    },
+    {
+      "player": "PlayerId.PLAYER_2",
+      "move": [
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -5
+        ]
+      ],
+      "timestamp": "2026-10-07T23:40:32.009062",
+      "piece_count": {
+        "PlayerId.PLAYER_1": 10,
+        "PlayerId.PLAYER_2": 10
+      },
+      "move_time": 0.4565
+    }
+  ]
+}
