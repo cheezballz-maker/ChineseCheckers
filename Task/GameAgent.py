@@ -103,9 +103,30 @@ def evaluate_player_pieces(pieces, player, goal):
 def position_key(pieces) -> frozenset[tuple[tuple[int,int],PlayerId]]:
     return frozenset(pieces.items())
 
+def evaluate_player_progress(game, simulated_board, player):
+    '''
+    Measures how well a player's pieces are advancing
+    '''
+    total_advancement = 0
+    goal = game.goal_triangles[player]
+    player_pieces = [piece for piece in simulated_board if simulated_board[piece] == player]
+
+    for piece in player_pieces:
+        best_piece_advancement = 0
+        paths = game.get_moves_with_paths_for(piece, simulated_board)
+        for end, path in paths.items():
+            if not follows_goal_rule(path, goal):
+                continue
+            piece_advancement = score_move((piece, end),goal)
+            if piece_advancement > best_piece_advancement:
+                best_piece_advancement = piece_advancement
+        total_advancement += best_piece_advancement
+    return total_advancement
+
 class GameAgent(Agent):
     def __init__(self):
         self.positions_count = {}
+        self.mobility_weight = 1.0
         
     def select_move(self, game: GameSnapshot, player: PlayerId):
         moves = get_playable_moves(game, player)
@@ -114,24 +135,30 @@ class GameAgent(Agent):
 
         if not moves:
             return None
-        
-        best_move = moves[0]
-        simulated_board = simulate_move(pieces, best_move)
-        best_score = evaluate_player_pieces(simulated_board, player, goal)
+
+        best_move = None
+        best_rank = None
+        best_key = None
 
         for move in moves:
             simulated_board = simulate_move(pieces, move)
             key = position_key(simulated_board)
-            score = evaluate_player_pieces(simulated_board, player, goal)
+            position_score = evaluate_player_pieces(simulated_board, player, goal)
+            progress_score = evaluate_player_progress(game, simulated_board, player)
+            combined_score = position_score + self.mobility_weight * progress_score
+            count = self.positions_count.get(key, 0)
+            wins = all(
+                cell in goal
+                for cell, owner in simulated_board.items()
+                if owner == player
+            )
 
-            if score > best_score:
-                best_score = score
+            # Compare wins first, then combined score, then fewer repetitions.
+            rank = (wins, combined_score, -count)
+            if best_rank is None or rank > best_rank:
                 best_move = move
-            elif score == best_score:
-                best_key = position_key(simulate_move(pieces, best_move))
-                if self.positions_count.get(key,0) < self.positions_count.get(best_key,0):
-                    best_score = score
-                    best_move = move
-        best_key = position_key(simulate_move(pieces, best_move))         
+                best_rank = rank
+                best_key = key
+
         self.positions_count[best_key] = self.positions_count.get(best_key, 0) + 1
         return best_move
