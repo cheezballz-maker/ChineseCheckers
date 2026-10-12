@@ -6,6 +6,8 @@ main_modules = project_root / "Task"
 sys.path.append(str(project_root))
 sys.path.append(str(main_modules))
 
+from functools import lru_cache
+
 from Agent import Agent
 from game_snapshot import GameSnapshot
 from utility import PlayerId
@@ -55,13 +57,40 @@ def simulate_move(pieces, move):
 
 def evaluate_player_pieces(pieces, player, goal):
     '''
-    Provide an aggregate score of ALL player's pieces in relation to the goal
+    Score the cost of assigning each player's piece to a different goal cell
     '''
-    player_pieces = [piece for piece in pieces if pieces[piece] == player]
-    dist_sq_sum = 0
+    player_pieces = tuple(sorted(piece for piece in pieces if pieces[piece] == player))
+    goal_cells = tuple(sorted(goal))
+    return -goal_assignment_cost(player_pieces, goal_cells)
+
+
+@lru_cache(maxsize=4096)
+def goal_assignment_cost(player_pieces, goal_cells):
+    '''
+    Find the lowest sum of squared distances using each goal cell at most once
+    '''
+    if not player_pieces:
+        return 0
+    if len(player_pieces) > len(goal_cells):
+        raise ValueError('There must be at least one goal cell for each piece')
+
+    # A bit in used_cells records whether a goal cell has already been assigned.
+    assignment_costs = {0: 0}
     for piece in player_pieces:
-        dist_sq_sum += dist_to_goal(piece, goal)**2
-    return -dist_sq_sum
+        next_assignment_costs = {}
+        dists = [hex_dist(piece, goal_cell)**2 for goal_cell in goal_cells]
+        for used_cells, cost in assignment_costs.items():
+            for index, dist in enumerate(dists):
+                cell_bit = 1 << index
+                if used_cells & cell_bit:
+                    continue
+                next_used_cells = used_cells | cell_bit
+                next_cost = cost + dist
+                if (next_used_cells not in next_assignment_costs
+                        or next_cost < next_assignment_costs[next_used_cells]):
+                    next_assignment_costs[next_used_cells] = next_cost
+        assignment_costs = next_assignment_costs
+    return min(assignment_costs.values())
 
 # Note: pieces can be a collection of moves from multiple players
 def position_key(pieces) -> frozenset[tuple[tuple[int,int],PlayerId]]:
@@ -87,18 +116,48 @@ def evaluate_player_progress(game, simulated_board, player):
         total_advancement += best_piece_advancement
     return total_advancement
 
+
+def evaluate_player_board(game, pieces, player, mobility_weight):
+    '''
+    Combine goal assignment with opportunities that matter less near the finish
+    '''
+    goal = game.goal_triangles[player]
+    player_pieces = [piece for piece in pieces if pieces[piece] == player]
+    if not player_pieces:
+        return 0
+    remaining_pieces = sum(piece not in goal for piece in player_pieces)
+    position_score = evaluate_player_pieces(pieces, player, goal)
+    progress_score = evaluate_player_progress(game, pieces, player)
+    progress_weight = mobility_weight * remaining_pieces / len(player_pieces)
+    return position_score + progress_weight * progress_score
+
 class GameAgent(Agent):
     def __init__(self):
         self.positions_count = {}
-        self.mobility_weight = 1.0
+        self.recent_positions = []
+        self.repetition_weight = 2.0
+        self.mobility_weight = 0.25
+        self.opponent_weight = 0.8
         
     def select_move(self, game: GameSnapshot, player: PlayerId):
+        '''
+        Weigh our improvement against the opponents' improvement after each move
+        '''
         moves = get_playable_moves(game, player)
         goal = game.goal_triangles[player]
         pieces = game.pieces
 
         if not moves:
             return None
+
+        opponents = [opponent for opponent in game.players if opponent != player]
+        before_score = evaluate_player_board(game, pieces, player, self.mobility_weight)
+
+        opponent_before_scores = {}
+        for opponent in opponents:
+            opponent_before_scores[opponent] = evaluate_player_board(
+                game, pieces, opponent, self.mobility_weight
+            )
 
         best_move = None
         best_rank = None
@@ -107,9 +166,26 @@ class GameAgent(Agent):
         for move in moves:
             simulated_board = simulate_move(pieces, move)
             key = position_key(simulated_board)
-            position_score = evaluate_player_pieces(simulated_board, player, goal)
-            progress_score = evaluate_player_progress(game, simulated_board, player)
-            combined_score = position_score + self.mobility_weight * progress_score
+            after_score = evaluate_player_board(game, simulated_board, player, self.mobility_weight)
+            player_improvement = after_score - before_score
+
+            opponent_improvement = 0
+            for opponent in opponents:
+                opponent_after_score = evaluate_player_board(
+                    game, simulated_board, opponent, self.mobility_weight
+                )
+                opponent_improvement += opponent_after_score - opponent_before_scores[opponent]
+
+            # Average the opponents so larger games do not outweigh our own progress.
+            if opponents:
+                opponent_improvement /= len(opponents)
+
+            # Helping opponents reduces the score; damaging their position increases it.
+            combined_score = player_improvement - self.opponent_weight * opponent_improvement
+            player_pieces = frozenset(piece for piece in simulated_board if simulated_board[piece] == player)
+            own_key = (player, player_pieces)
+            repeat_count = self.recent_positions.count(own_key)
+            combined_score -= self.repetition_weight * repeat_count
             count = self.positions_count.get(key, 0)
             wins = all(
                 cell in goal
@@ -125,6 +201,10 @@ class GameAgent(Agent):
                 best_key = key
         
         self.positions_count[best_key] = self.positions_count.get(best_key, 0) + 1
+        simulated_board = simulate_move(pieces, best_move)
+        player_pieces = frozenset(piece for piece in simulated_board if simulated_board[piece] == player)
+        self.recent_positions.append((player, player_pieces))
+        self.recent_positions = self.recent_positions[-12:]
         return best_move
 
 def run_match(agents, max_turns):
